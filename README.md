@@ -1,58 +1,50 @@
-# Waste Material Segregation for Improving Waste Management
+# Fake News Detection
 
 ## Objective
-The objective of this project is to implement an effective waste material segregation system using convolutional neural networks (CNNs) that categorises waste into distinct groups. This process enhances recycling efficiency, minimises environmental pollution, and promotes sustainable waste management practices.
+This project aims to create a fake news detection system by training semantic classifiers using Word2Vec embeddings. The objective is to classify news articles as either fake or true by extracting meaningful patterns from the text and training machine learning models to recognize them.
 
 ## The key goals are:
 
-Accurately classify waste materials into categories like cardboard, glass, paper, and plastic.
-Improve waste segregation efficiency to support recycling and reduce landfill waste.
-Understand the properties of different waste materials to optimise sorting methods for sustainability.
+The spread of fake news has become a significant challenge in today’s digital world. With the massive volume of news articles published daily, it’s becoming harder to distinguish between credible and misleading information. This creates a need for systems that can automatically classify news articles as true or fake, helping to reduce misinformation and protect public trust.
+We will develop a Semantic Classification model that uses the Word2Vec method to detect recurring patterns and themes in news articles. Using supervised learning models, the goal is to build a system that classifies news articles as either fake or true.
 
 
 ## Table of Contents
-* [Data Understanding](#data-understanding)
 * [Data Preparation](#data-preparation)
+* [Text Preprocessing](#text-preprocessing)
 * [Model Building and Evaluation](#model-building)
-* [Data Augmentataion](#data-augmentation)
+* [EDA On Training Data](#EDA-TrainingData)
+* [EDA On Validation Data](#EDA-ValidationData)
+* [Predictions](#Predictions)
 * [Conclusions](#conclusions)
 * [Acknowledgements](#acknowledgements)
 
-## Data Understanding
-- This is a programming assignment in which we build a CNN python model to segregate waste materials.
-- Import necessary libraries
-- We load and unzip data
-  
 ## Data Preparation
-- Load and pre-process the images
-- Training and Testing directories
-- Visualise sample images
-- Encoding different classes
-- Creating validation and final training sets
+- Installing required Libraries
+- Data Understanding
+
+## Text_Preprocessing
+- Text Cleaning
   
 ## Model Building and Evaluation
-- Normal model building with 3 CNN layers
-- Model Training
-- Testing model on the test set
-- Build models using transfer learning (with VGG16 and ResNet50V2). Then training and evaluation on the test set
-
-## Data Augmentation
-- Create a Data Augmentation Pipeline
-- Train and Evaluate the model on the new augmented dataset
+- Model building
   
+## EDA On Training Data
+- Caculate Character Lengths
+- Displaying Anagrams
+  
+## EDA On Validation Data
+- Caculate Character Lengths
+- Displaying Anagrams
+- 
 ## Conclusions (Major)
-- The normal convolution model does not give accuracy on test set better than 64%
-- The transformation technique with base model as VGG16 provides much better test data accuracy of 76%
-- We get even better test data accuracy of 84% with base model as ResNet50V2
-- Also, loss in test data set; normal CNN model > base model as VGG16 > base model as ResNet50V2
-- The test accuracy is even worse in the augmented dataset: 57%
+This project effectively showcased the utility of semantic classification in building robust fake news detection systems. The Random Forest model, underpinned by Word2Vec embeddings, offers a balanced and effective solution, contributing to the broader effort of fostering a more informed digital environment.
  
-  
 ## Acknowledgements
-
+- This is a Group Assigment. Members are: Seeta Ram Pandey and Abhishek Shanmukha
 - This project was inspired by ML-AI couse at UpGrad and IIIT-B
 - References: UpGrad and IIIT-B
-- This project was based on [CNN Assignment]([https://learn.upgrad.com/course/5811/segment/60414/369869/1115042/5565470]).
+- This project was based on [NLP Assignment]([https://learn.upgrad.com/course/5811/segment/61753/374493/1128757/5632542]).
 
 
 ## Contact
